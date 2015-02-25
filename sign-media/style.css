@@ -1,0 +1,252 @@
+@charset "UTF-8";
+/* CSS Document */
+body{
+    background:url('images/background.png')center;
+
+}
+#wrapper{
+    background:#ffffff; 
+    width:900px;  
+    margin:20px auto;
+	height:400px; 
+	 
+}
+#header{
+	height: 130px;
+	width: inherit;
+	background: url('images/logo.png')0px 0px no-repeat;
+	position:absolute;
+	z-index:3;
+
+}
+/*navigation bar*/
+#jsddm{
+	margin: 0;
+	padding:2px 52px;
+	
+}
+#jsddm li{
+	float: left;
+	list-style: none;
+	font: 20px "Belwe Cn BT";
+	text-align:center;
+	position:relative;
+	left:360px;
+	top:45px;
+
+}
+#jsddm li a{
+	display: block;
+	background: #ffffff;
+	padding: 5px 16px;
+	text-decoration: none;
+	width: 90px;
+	color: #002f9f;
+	white-space: nowrap;
+	
+}
+#jsddm li a:hover{
+	background: #091961; /* Old browsers */
+	background: -moz-linear-gradient(top,  #091961 0%, #091961 50%, #091961 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#091961), color-stop(50%,#002f9f), color-stop(100%,#091961)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #091961 0%,#002f9f 50%,#091961 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #091961 0%,#002f9f 50%,#091961 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #091961 0%,#002f9f 50%,#091961 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #091961 0%,#002f9f 50%,#091961 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#091961', endColorstr='#091961',GradientType=0 ); /* IE6-9 */
+	color:#ffffff;
+	
+}
+#jsddm li ul{
+	margin: 0;
+	padding: 0;
+	position:relative;
+	left:-495px;
+	top:-50px;
+	visibility: hidden;
+	color:#ffffff;
+
+}
+#jsddm li ul li{
+	float: none;
+	display: inline;
+	text-align:left;
+		
+}
+#jsddm li ul li a{
+	width: auto;
+	background: #091961;
+	color:#ffffff;
+	text-align:right;
+
+}
+#jsddm li ul li a:hover{	
+	background: #091961; /* Old browsers */
+	background: -moz-linear-gradient(top,  #091961 0%, #002f9f 50%, #091961 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#091961), color-stop(50%,#002f9f), color-stop(100%,#091961)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #091961 0%,#002f9f 50%,#091961 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #091961 0%,#002f9f 50%,#091961 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #091961 0%,#002f9f 50%,#091961 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #091961 0%,#002f9f 50%,#091961 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#091961', endColorstr='#091961',GradientType=0 ); /* IE6-9 */
+	/*background:url('images/nav.png')left left no-repeat;*/
+
+}
+
+#container{
+	position:absolute;
+	padding-top:50px;
+	top:100px;
+	width: 900px;
+	height: auto;
+	background:#002f9f;
+	color:#FFFfff; 
+}
+#content{
+	margin:0px 0px;
+	font-family:"Belwe Cn BT";
+	font-size:20px; 
+	width:900px;
+	padding-left:40px;
+	padding-right:80px;
+	text-align:left;
+	
+}
+#footer{
+	width:900px;
+	padding-left:40px;
+	padding-right:80px;
+	text-align:center;
+	
+}
+#slide {
+	position:relative;
+	top:10px;
+	left:100px;
+
+}
+#left{
+	float:left;
+	width:340px;
+	height:500px;
+	text-align:right;
+}
+#lefty{
+	float:left;
+	width:400px;
+	height:500px;
+	text-align:justify;
+	padding:0px 0px 20px 0px;
+}
+#right{
+	float:right;
+	width:450px;
+	height:150px;
+	text-align:left;
+}
+#top{
+	width:860px;
+	margin:0px;	
+	height:70px;
+		
+}
+#rightimage{
+	float:right;
+	width:450px;
+	height:500px;
+
+}
+#buttons{
+	position:absolute;
+	left:670px;
+	top:300px;
+	width:226px;
+	height:90px;
+	
+}
+#buttons li{
+	margin:0;
+	padding:0;
+	list-style:none;
+	position:absolute;
+	top:0;
+
+}
+#buttons li, #buttons a{
+	height:45px;
+	display:block;
+
+}
+
+#quote{
+	left:0px;width:226px;
+	background:url('images/buttons.png') 0 0;
+	
+}
+#quote a:hover{background: url('images/buttons.png') 0 -45px;
+
+}
+/* 
+#products{
+	width:226px;
+	
+	background:url('images/buttons.png') -226px 0;
+
+}
+#products a:hover{
+	background: url('images/buttons.png') -226px -45px;
+	
+}
+ */
+
+/***********************
+ICONS
+************************/
+.icon_facebook, .icon_google, .icon_linkedin, .icon_twitter{
+	height:32px;
+	width:32px;
+	line-height:32px;
+	display:inline-block;
+	margin:0px;
+	overflow:hidden;
+	
+}
+/********* facebook *********/
+.icon_facebook{
+	background:url('images/icons.png') no-repeat 0px 0px;
+
+}
+/********* google+ *********/
+.icon_google{
+	background:url('images/icons.png') no-repeat -32px 0px;
+	
+}
+/********* linkedin *********/
+.icon_linkedin{
+	background:url('images/icons.png') no-repeat 0px -32px;
+
+}
+/********* twitter *********/
+.icon_twitter{
+	background:url('images/icons.png') no-repeat -32px -32px;
+	
+}
+.pics { 
+	width: 585px;
+	height:384px;   
+    padding: 0;  
+    margin:  0;  
+} 
+ 
+.pics img {
+	width: 585px; 
+	height:384px;
+	position:absolute; 
+    padding: 15px;  
+    border:  1px solid #ccc;  
+    background-color: #eee;   
+    top:  0; 
+    left: 0 
+} 
+
+
