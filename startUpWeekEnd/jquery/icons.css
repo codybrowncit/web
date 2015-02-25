@@ -1,0 +1,16 @@
+/***********************
+ICONS
+************************/
+.icon_facebook, .icon_google, .icon_linkedin, .icon_twitter 
+{height:32px;width:32px;line-height:32px;display:inline-block;margin:0px;overflow:hidden;}
+/********* facebook *********/
+.icon_facebook{background:url('icons.png') no-repeat 0px 0px;}
+/********* google+ *********/
+.icon_google{background:url('icons.png') no-repeat -32px 0px;}
+/********* linkedin *********/
+.icon_linkedin{background:url('icons.png') no-repeat 0px -32px;}
+/********* twitter *********/
+.icon_twitter{background:url('icons.png') no-repeat -32px -32px;}
+
+
+

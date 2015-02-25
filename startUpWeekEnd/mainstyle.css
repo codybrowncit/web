@@ -1,0 +1,268 @@
+@charset "UTF-8";
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #ffffff;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #f68b1f;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #f68b1f;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+	color: #524fa1;
+}
+
+/* ~~ this fixed width container surrounds all other elements ~~ */
+.container {
+	width: 1000px;
+	background-color: #FFF;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+.content {
+
+	padding: 10px 0;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the overflow:hidden on the .container is removed */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+.pics{
+	width: 1000px;
+	clear: both;
+	padding-top: 7px;
+	
+	border-left-style: none;
+	height: 340px;
+	padding-bottom: 4px;
+	border-top-width: 3px;
+	border-top-style: solid;
+	border-top-color: #f68b1f;
+}
+#nav {
+	margin-top: 20px;
+	padding-bottom: 6px;
+}
+#nav img {
+	float: left;
+	margin-bottom: 10px;
+}
+#nav li {
+	list-style: none;
+	text-align: center;
+	float: right;
+}
+
+#nav li a {
+	margin: 0px 5px;
+	padding: 0px 10px;
+	text-decoration: none;
+	width: auto;
+	color: #000000;
+	white-space: nowrap;
+}
+#nav li a:hover {
+	margin: 0px 5px;
+	padding: 0px 10px;
+	text-decoration: none;
+	width: auto;
+	color: #f68b1f;
+	white-space: nowrap;
+}
+#mainTitle {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 19px;
+	font-weight: bold;
+	color: #000;
+	text-align: center;
+	width: 100%;
+	margin-top: 9px;
+	margin-bottom: 9px;
+	padding-top: 9px;
+	padding-bottom: 9px;
+	border-top-width: 3px;
+	border-top-style: solid;
+	border-top-color: #f68b1f;
+}
+.boxHolder {
+	width: 92%;
+	margin-top: 10px;
+	margin-left: 5%;
+}
+.featureBox {
+	width: 28%;
+	margin-left: 3%;
+	text-align: center;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000;
+	float: left;
+}
+.homeText {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #000;
+	width: 90%;
+	margin-top: 20px;
+	margin-right: 5%;
+	margin-left: 5%;
+	margin-bottom: 20px;
+}
+.footer {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	color: #000;
+	width: 1000px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-top: 10px;
+	border-top-width: 3px;
+	border-top-style: solid;
+	border-top-color: #524fa1;
+	border-right-color: #524fa1;
+	border-bottom-color: #524fa1;
+	border-left-color: #524fa1;
+	clear: both;
+}
+.mainBody {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #000;
+	width: 90%;
+	margin-right: 5%;
+	margin-left: 5%;
+}
+.formTable {
+	width: 50%;
+	margin-right: 25%;
+	margin-left: 25%;
+}
+.formTable input {
+	border: 1px solid #524fa1;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	padding: 3px;
+}
+.formTable textarea {
+	border: 1px solid #524fa1;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	padding: 3px;
+}
+.leftColumn {
+	padding: 9px;
+	float: left;
+	width: 27%;
+	text-align: center;
+}
+.rightColumn {
+	padding: 9px;
+	float: right;
+	width: 65%;
+}
+.eventName {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #524fa1;
+}
+.payTable {
+	width: 80%;
+	margin-right: 7%;
+	margin-left: 7%;
+}
+.payTable input {
+	border: 1px solid #524fa1;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	padding: 3px;
+}
+.payTable textarea {
+	border: 1px solid #524fa1;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	padding:
+}
+.amountButton a:link, a:active, a:visited {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	color: #FFF;
+	text-align: center;
+	width: 150px;
+	padding-top: 9px;
+	padding-bottom: 9px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	float: left;
+	margin-left: 15px;
+	margin-right: 15px;
+	background-color: #524fa1;
+	text-decoration: none;
+}
+.amountButton a:hover {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	color: #FFF;
+	text-align: center;
+	width: 150px;
+	padding-top: 9px;
+	padding-bottom: 9px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	float: left;
+	margin-right: 15px;
+	margin-left: 15px;
+	background-color: #f68b1f;
+	text-decoration: none;
+}
+

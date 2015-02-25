@@ -1,0 +1,6 @@
+ErrorDocument 404 /404page.php
+RewriteEngine On
+AddHandler application/x-httpd-php5 .php
+AddType text/x-component .htc
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+RewriteRule ^([0-9a-zA-Z_\-]+)$ clients.php?Name=$1 [L,QSA]
